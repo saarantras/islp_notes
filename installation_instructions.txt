@@ -1,0 +1,28 @@
+Open a terminal on mccleary
+
+create the islp environment with:
+
+```
+module load miniconda
+conda create -n islp python=3.11
+conda activate islp
+/home/your_net_id/.conda/envs/islp/bin/pip install ISLP
+mamba install jupyterlab
+conda deactivate
+module unload minconda
+ycrc_conda_env.sh update
+```
+
+go to https://ood-mccleary.ycrc.yale.edu/pun/sys/dashboard/batch_connect/sessions
+click "jupiter"
+first drop down menu ("Environment Setup") : select "islp"
+
+Check the box "start jupyterlab instead of jupyter notebook"
+
+Optional : change memory, number of CPUs, time, partition ("devel" is probably fine for learning)
+
+Launch
+
+"Connect to jupyter"
+
+enjoy :-)
